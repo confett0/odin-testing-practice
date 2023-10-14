@@ -19,3 +19,15 @@ test('Subtract multiple digits numbers', () => {
   test('Works when the second number is larger than the first', () => {
     expect(calculator.subtract(8,14)).toBe(-6);
   });
+
+  test('Multiplies single digits numbers', () => {
+    expect(calculator.multiply(4,3)).toBe(12);
+  });
+
+test('Multiplies multiple digits numbers', () => {
+    expect(calculator.multiply(12,9)).toBe(108);
+  });
+
+test('Returns 0 when one number is zero', () => {
+    expect(calculator.multiply(734,0)).toBe(0);
+  });
