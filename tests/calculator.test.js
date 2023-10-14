@@ -40,6 +40,8 @@ test('Divides multiple digits numbers', () => {
     expect(calculator.divide(345,11)).toBeCloseTo(31.36);
   });
 
-test('Throws an error when trying to divide by zero', () => {
-    expect(calculator.divide(42,0)).toThrow(Error);
+  test('Throws an error when dividing by zero', () => {
+    expect(() => {
+      calculator.divide(42, 0);
+    }).toThrow(Error);
   });
