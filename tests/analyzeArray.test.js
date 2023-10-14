@@ -17,3 +17,18 @@ test('Analyzes longer array', () => {
         length: 6
       });
   });
+
+  test('Analyzes one element array', () => {
+    expect(analyzeArray([6])).toEqual({
+        average: 6,
+        min: 6,
+        max: 6,
+        length: 1
+      });
+  });
+
+  test('Throws an error when the array is empty', () => {
+    expect(() => {
+      analyzeArray([]);
+    }).toThrow(Error);
+  });
