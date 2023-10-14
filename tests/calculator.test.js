@@ -31,3 +31,11 @@ test('Multiplies multiple digits numbers', () => {
 test('Returns 0 when one number is zero', () => {
     expect(calculator.multiply(734,0)).toBe(0);
   });
+
+  test('Divides single digits numbers', () => {
+    expect(calculator.divide(4,2)).toBe(2);
+  });
+
+test('Divides multiple digits numbers', () => {
+    expect(calculator.divide(345,11)).toBeCloseTo(31.36);
+  });
