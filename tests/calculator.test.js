@@ -15,3 +15,7 @@ test('Subtract single digits numbers', () => {
 test('Subtract multiple digits numbers', () => {
     expect(calculator.subtract(743,222)).toBe(521);
   });
+
+  test('Works when the second number is larger than the first', () => {
+    expect(calculator.subtract(8,14)).toBe(-6);
+  });
